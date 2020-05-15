@@ -1,0 +1,25 @@
+.tab-pane *.tab-header-background {
+   -fx-background-color: #3390FF;
+}
+
+.tab {
+   -fx-background-color: transparent;
+}
+
+.tab-label {
+    -fx-text-fill: white;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+   -fx-border-style: solid none none none;
+   -fx-border-width: 2;
+   -fx-border-color: white;
+}
+
+.tabPane {
+   -fx-background-color: white;
+}
+
+#openBtn {
+   -fx-background-color: white;
+}
