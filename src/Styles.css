@@ -1,3 +1,7 @@
+#rootElement {
+   -fx-background-color: #3390FF;
+}
+
 .tab-pane *.tab-header-background {
    -fx-background-color: #3390FF;
 }
