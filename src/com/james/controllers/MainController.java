@@ -1,6 +1,8 @@
 package com.james.controllers;
 
+import com.james.BaseController;
 import com.james.exception.ExceptionHandler;
+import com.james.views.ViewFactory;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,7 +12,11 @@ import javafx.scene.layout.AnchorPane;
 import java.io.File;
 import java.net.URL;
 
-public class MainController {
+public class MainController extends BaseController {
+
+   public MainController(AppManager appManager, ViewFactory viewFactory, String fxmlName) {
+      super(appManager, viewFactory, fxmlName);
+   }
 
    @FXML
    public Button openBtn;
@@ -20,6 +26,7 @@ public class MainController {
 
    @FXML
    public TabPane tabPane;
+
 
    @FXML
    void openProject() {
